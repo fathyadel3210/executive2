@@ -48,7 +48,7 @@ const SliderUniversity = () => {
                 spaceBetween={matchesSM ? 200 : 50}
                 slidesPerView={slideView}
                 pagination={{ clickable: true }}
-                style={{paddingBottom:"4em", paddingLeft:matchesXS ? "2em" : undefined}}
+                style={{paddingBottom:"4em"}}
                 >
                 <SwiperSlide>
                     <Card style={{backgroundColor:'transparent', boxShadow:theme.shadows[0], maxWidth:348, maxHeight:341, minWidth:348, minHeight:341}}>

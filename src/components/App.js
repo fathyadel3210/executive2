@@ -22,9 +22,7 @@ import SliderEvents from './SliderEvents';
 import SliderCountry from './SliderCountry';
 import {Link,  BrowserRouter as Router} from 'react-router-dom';
 import executivewhite from '../images/executive-white.png';
-import twitter from '../images/twitter.png';
-import instagram from '../images/instagram.png';
-import facebook from '../images/facebook.png';
+
 
 const useStyles = makeStyles(theme => ({
     gridContainer:{
@@ -65,8 +63,8 @@ const App = () => {
                 <Typography variant="h4" gutterBottom style={{color:'#373737'}}>Our Services</Typography>
             </Grid>
             <Grid item container direction="row" justify="center">
-                <Grid item style={{maxWidth:"50em"}}>
-                    <Typography variant="subtitle1" align="center" style={{fontSize:matchesXS ? "1.3em" : undefined}}>Executive Trade International is an University Application Centre, guiding Bangladeshi students to Australian, British, Canadian and Irish universities!</Typography>
+                <Grid item style={{maxWidth:"50em", padding:matchesXS ? 15 : undefined}}>
+                    <Typography variant="subtitle1" align="center" style={{fontSize:matchesXS ? "1.1em" : undefined}}>Executive Trade International is an University Application Centre, guiding Bangladeshi students to Australian, British, Canadian and Irish universities!</Typography>
                 </Grid>
             </Grid>
             <Grid container direction={matchesSM ? "column" : "row"} style={{marginTop:"5em"}} className={classes.gridContainer} justify={matchesSM ? "center" : "space-between"} alignItems="center">
@@ -183,7 +181,7 @@ const App = () => {
             </Grid>
             <Grid item container direction="row" justify="center" style={{marginTop:"2em"}} className={classes.gridContainer}>
                 <Grid item style={{maxWidth:"50em"}}>
-                    <Typography variant="subtitle1" align="center" style={{fontSize:matchesXS ? "1.2em" : undefined}}>Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
+                    <Typography variant="subtitle1" align="center" style={{fontSize:matchesXS ? "1.1em" : undefined,}}>Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesSM ? "column" :"row"}  style={{marginTop:"5em"}} className={classes.gridContainer} justify="space-between" alignItems="center">
@@ -238,11 +236,11 @@ const App = () => {
             </Grid>
             </Grid>
             <Grid item container direction="row" justify="center" className={classes.gridContainer} style={{marginTop:"5em"}}>
-                <Typography variant="h4" style={{color:theme.palette.common.black}} gutterBottom align={matchesXS ? "center" : undefined}>Upcoming University Events</Typography>  
+                <Typography variant={matchesXS ? "h5" : "h4" } style={{color:theme.palette.common.black}} gutterBottom align={matchesXS ? "center" : undefined}>Upcoming University Events</Typography>  
             </Grid>
             <Grid item container direction="row" justify="center">
                 <Grid item style={{maxWidth:"55em"}}>
-                    <Typography style={{color:theme.palette.common.greyDark, fontSize:matchesXS ? "1.1em" : undefined}} align="center" variant="subtitle1">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
+                    <Typography style={{color:theme.palette.common.greyDark, fontSize:matchesXS ? "1.1em" : undefined, padding:matchesXS ? 15: undefined}} align="center" variant="subtitle1">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
                 </Grid>
             </Grid>
             <Grid item container direction="row" justify="center" className={classes.gridContainer} style={{marginTop:"5em"}}>
@@ -250,11 +248,11 @@ const App = () => {
             </Grid>
             <Grid item container direction="row" style={{backgroundColor:theme.palette.common.greyLight, marginTop:"5em", paddingBottom:"2em"}}>
                 <Grid item container direction="row" justify="center" style={{marginTop:"5em"}} className={classes.gridContainer}>
-                    <Typography variant="h4" style={{color:theme.palette.common.black}}>Countries We Covered</Typography>
+                    <Typography variant={matchesXS ? "h5" : "h4"} style={{color:theme.palette.common.black}} align="center">Countries We Covered</Typography>
                 </Grid>
                 <Grid item container direction="row" justify="center" style={{marginTop:"1em"}}>
                     <Grid item style={{maxWidth:"60em"}}>
-                        <Typography variant="subtitle1" style={{color:theme.palette.common.greyDark}} align="center">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
+                        <Typography  style={{color:theme.palette.common.greyDark, padding:matchesXS ? 10 : undefined}} align="center">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.</Typography>
                     </Grid>        
                 </Grid>
                 <Grid item container direction="row" style={{marginTop:"3em"}} className={classes.gridContainer}>
@@ -270,7 +268,7 @@ const App = () => {
                 </Grid>
             </Grid>
             <Grid item container direction="row"  style={{height:matchesSM ? "50em" :  "25em", backgroundColor:theme.palette.primary.main, marginTop:"5em"}}>
-                <Grid item container direction={matchesSM ? "column" :"row"} alignItems={matchesSM ? "center" : undefined} justify="space-between" style={{paddingTop:"5em", paddingLeft:"3em"}}>
+                <Grid item container direction={matchesSM ? "column" :"row"} alignItems={matchesSM ? "center" : undefined} justify="space-between" style={{paddingTop:"5em", paddingLeft:matchesSM ? undefined : "3em"}}>
                     <Grid item container direction="column" style={{maxWidth:"20em"}} alignItems={matchesSM ? "center" : undefined}>
                         <Grid item>
                             <img src={executivewhite} alt="executive"/>
@@ -313,15 +311,15 @@ const App = () => {
                             <Typography style={{color:"#fff", marginTop:"1em"}}>Terms of Service</Typography>
                         </Grid>
                     </Grid>
-                    <Grid item container direction="row" style={{maxWidth:"10em", marginBottom:"2em"}} alignItems="flex-end">
+                    <Grid item container direction="row" style={{maxWidth:"10em", marginBottom:"2em"}} alignItems={matchesSM ? "center" : "flex-end"} justify={matchesSM ? "center" : undefined}>
                         <Grid item>
-                            <i class="fab fa-facebook-f fa-2x" style={{color:"#fff"}}></i>
+                            <i className="fab fa-facebook-f fa-2x" style={{color:"#fff"}}></i>
                         </Grid>
                         <Grid item>
-                            <i class="fab fa-instagram fa-2x" style={{color:"#fff", marginRight:".5em", marginLeft:".5em"}}></i>
+                            <i className="fab fa-instagram fa-2x" style={{color:"#fff", marginRight:".5em", marginLeft:".5em"}}></i>
                         </Grid>
                         <Grid item>
-                            <i class="fab fa-twitter fa-2x" style={{color:"#fff"}}></i>
+                            <i className="fab fa-twitter fa-2x" style={{color:"#fff"}}></i>
                         </Grid>
                     </Grid>
                 </Grid>
