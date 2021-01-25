@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/executive2/static/js/main.fa38d8ab.chunk.js",
+    "main.js.map": "/executive2/static/js/main.fa38d8ab.chunk.js.map",
+    "runtime-main.js": "/executive2/static/js/runtime-main.0d89341a.js",
+    "runtime-main.js.map": "/executive2/static/js/runtime-main.0d89341a.js.map",
+    "static/css/2.d50d42db.chunk.css": "/executive2/static/css/2.d50d42db.chunk.css",
+    "static/js/2.bd8244de.chunk.js": "/executive2/static/js/2.bd8244de.chunk.js",
+    "static/js/2.bd8244de.chunk.js.map": "/executive2/static/js/2.bd8244de.chunk.js.map",
+    "index.html": "/executive2/index.html",
+    "static/css/2.d50d42db.chunk.css.map": "/executive2/static/css/2.d50d42db.chunk.css.map",
+    "static/js/2.bd8244de.chunk.js.LICENSE.txt": "/executive2/static/js/2.bd8244de.chunk.js.LICENSE.txt",
+    "static/media/canada.90df690a.png": "/executive2/static/media/canada.90df690a.png",
+    "static/media/charles.a2fa1d0a.png": "/executive2/static/media/charles.a2fa1d0a.png",
+    "static/media/graduate-girl.f615675a.png": "/executive2/static/media/graduate-girl.f615675a.png",
+    "static/media/latrobre.01758c39.png": "/executive2/static/media/latrobre.01758c39.png",
+    "static/media/macquire.77752398.png": "/executive2/static/media/macquire.77752398.png",
+    "static/media/newCastl.968ff84e.png": "/executive2/static/media/newCastl.968ff84e.png",
+    "static/media/people.1352030d.png": "/executive2/static/media/people.1352030d.png",
+    "static/media/puzzle.4a5984d7.png": "/executive2/static/media/puzzle.4a5984d7.png",
+    "static/media/uk.49ffbaa1.png": "/executive2/static/media/uk.49ffbaa1.png",
+    "static/media/woman.ac3d2ccb.png": "/executive2/static/media/woman.ac3d2ccb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d89341a.js",
+    "static/css/2.d50d42db.chunk.css",
+    "static/js/2.bd8244de.chunk.js",
+    "static/js/main.fa38d8ab.chunk.js"
+  ]
+}
